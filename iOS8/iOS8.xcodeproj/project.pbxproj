@@ -17,6 +17,11 @@
 		701E06C51EC060490065B528 /* iOS81.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06C11EC060490065B528 /* iOS81.md */; };
 		701E06C61EC060490065B528 /* iOS82.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06C21EC060490065B528 /* iOS82.md */; };
 		701E06C71EC060490065B528 /* iOS83.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06C31EC060490065B528 /* iOS83.md */; };
+		701E06E11EC074D70065B528 /* iOS80.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06DC1EC074D70065B528 /* iOS80.md */; };
+		701E06E21EC074D70065B528 /* iOS81.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06DD1EC074D70065B528 /* iOS81.md */; };
+		701E06E31EC074D70065B528 /* iOS82.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06DE1EC074D70065B528 /* iOS82.md */; };
+		701E06E41EC074D70065B528 /* iOS83.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06DF1EC074D70065B528 /* iOS83.md */; };
+		701E06E51EC074D70065B528 /* iOS84.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06E01EC074D70065B528 /* iOS84.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		701E06C11EC060490065B528 /* iOS81.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS81.md; sourceTree = "<group>"; };
 		701E06C21EC060490065B528 /* iOS82.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS82.md; sourceTree = "<group>"; };
 		701E06C31EC060490065B528 /* iOS83.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS83.md; sourceTree = "<group>"; };
+		701E06DC1EC074D70065B528 /* iOS80.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS80.md; sourceTree = "<group>"; };
+		701E06DD1EC074D70065B528 /* iOS81.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS81.md; sourceTree = "<group>"; };
+		701E06DE1EC074D70065B528 /* iOS82.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS82.md; sourceTree = "<group>"; };
+		701E06DF1EC074D70065B528 /* iOS83.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS83.md; sourceTree = "<group>"; };
+		701E06E01EC074D70065B528 /* iOS84.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS84.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +58,7 @@
 		701E069F1EC05FC10065B528 = {
 			isa = PBXGroup;
 			children = (
+				701E06C81EC064B10065B528 /* 指导 */,
 				701E06BD1EC05FD10065B528 /* Guides */,
 				701E06AA1EC05FC10065B528 /* iOS8 */,
 				701E06A91EC05FC10065B528 /* Products */,
@@ -85,6 +96,18 @@
 				701E06C01EC060490065B528 /* iOS80.md */,
 			);
 			path = Guides;
+			sourceTree = "<group>";
+		};
+		701E06C81EC064B10065B528 /* 指导 */ = {
+			isa = PBXGroup;
+			children = (
+				701E06DC1EC074D70065B528 /* iOS80.md */,
+				701E06DD1EC074D70065B528 /* iOS81.md */,
+				701E06DE1EC074D70065B528 /* iOS82.md */,
+				701E06DF1EC074D70065B528 /* iOS83.md */,
+				701E06E01EC074D70065B528 /* iOS84.md */,
+			);
+			path = "指导";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,11 +184,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				701E06AE1EC05FC10065B528 /* ViewController.swift in Sources */,
+				701E06E41EC074D70065B528 /* iOS83.md in Sources */,
 				701E06C51EC060490065B528 /* iOS81.md in Sources */,
+				701E06E31EC074D70065B528 /* iOS82.md in Sources */,
+				701E06E11EC074D70065B528 /* iOS80.md in Sources */,
 				701E06C61EC060490065B528 /* iOS82.md in Sources */,
+				701E06E21EC074D70065B528 /* iOS81.md in Sources */,
 				701E06BF1EC060180065B528 /* iOS84.md in Sources */,
 				701E06C41EC060490065B528 /* iOS80.md in Sources */,
 				701E06C71EC060490065B528 /* iOS83.md in Sources */,
+				701E06E51EC074D70065B528 /* iOS84.md in Sources */,
 				701E06AC1EC05FC10065B528 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +356,7 @@
 				701E06BC1EC05FC10065B528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -16,6 +16,10 @@
 		701E06731EC04D430065B528 /* iOS102.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06721EC04D430065B528 /* iOS102.md */; };
 		701E06751EC04E200065B528 /* iOS101.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06741EC04E200065B528 /* iOS101.md */; };
 		701E06771EC04F320065B528 /* iOS100.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06761EC04F320065B528 /* iOS100.md */; };
+		701E06CF1EC064FD0065B528 /* iOS100.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06CB1EC064FD0065B528 /* iOS100.md */; };
+		701E06D01EC064FD0065B528 /* iOS101.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06CC1EC064FD0065B528 /* iOS101.md */; };
+		701E06D11EC064FD0065B528 /* iOS102.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06CD1EC064FD0065B528 /* iOS102.md */; };
+		701E06D21EC064FD0065B528 /* iOS103.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06CE1EC064FD0065B528 /* iOS103.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		701E06721EC04D430065B528 /* iOS102.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS102.md; sourceTree = "<group>"; };
 		701E06741EC04E200065B528 /* iOS101.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS101.md; sourceTree = "<group>"; };
 		701E06761EC04F320065B528 /* iOS100.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS100.md; sourceTree = "<group>"; };
+		701E06CB1EC064FD0065B528 /* iOS100.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS100.md; sourceTree = "<group>"; };
+		701E06CC1EC064FD0065B528 /* iOS101.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS101.md; sourceTree = "<group>"; };
+		701E06CD1EC064FD0065B528 /* iOS102.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS102.md; sourceTree = "<group>"; };
+		701E06CE1EC064FD0065B528 /* iOS103.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS103.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,7 @@
 		701E06501EC044DE0065B528 = {
 			isa = PBXGroup;
 			children = (
+				701E06CA1EC064CC0065B528 /* 指导 */,
 				701E066F1EC047C30065B528 /* Guides */,
 				701E065B1EC044DE0065B528 /* iOS10 */,
 				701E065A1EC044DE0065B528 /* Products */,
@@ -82,6 +91,17 @@
 				701E06761EC04F320065B528 /* iOS100.md */,
 			);
 			path = Guides;
+			sourceTree = "<group>";
+		};
+		701E06CA1EC064CC0065B528 /* 指导 */ = {
+			isa = PBXGroup;
+			children = (
+				701E06CB1EC064FD0065B528 /* iOS100.md */,
+				701E06CC1EC064FD0065B528 /* iOS101.md */,
+				701E06CD1EC064FD0065B528 /* iOS102.md */,
+				701E06CE1EC064FD0065B528 /* iOS103.md */,
+			);
+			path = "指导";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,10 +178,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				701E06CF1EC064FD0065B528 /* iOS100.md in Sources */,
+				701E06D01EC064FD0065B528 /* iOS101.md in Sources */,
 				701E06731EC04D430065B528 /* iOS102.md in Sources */,
 				701E06751EC04E200065B528 /* iOS101.md in Sources */,
 				701E06771EC04F320065B528 /* iOS100.md in Sources */,
 				701E065F1EC044DE0065B528 /* ViewController.swift in Sources */,
+				701E06D21EC064FD0065B528 /* iOS103.md in Sources */,
+				701E06D11EC064FD0065B528 /* iOS102.md in Sources */,
 				701E065D1EC044DE0065B528 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +348,7 @@
 				701E066D1EC044DE0065B528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

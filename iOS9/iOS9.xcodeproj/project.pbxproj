@@ -16,6 +16,10 @@
 		701E069C1EC059730065B528 /* iOS90.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06991EC059730065B528 /* iOS90.md */; };
 		701E069D1EC059730065B528 /* iOS91.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E069A1EC059730065B528 /* iOS91.md */; };
 		701E069E1EC059730065B528 /* iOS92.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E069B1EC059730065B528 /* iOS92.md */; };
+		701E06D81EC06F2B0065B528 /* iOS90.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06D41EC06F2B0065B528 /* iOS90.md */; };
+		701E06D91EC06F2B0065B528 /* iOS91.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06D51EC06F2B0065B528 /* iOS91.md */; };
+		701E06DA1EC06F2B0065B528 /* iOS92.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06D61EC06F2B0065B528 /* iOS92.md */; };
+		701E06DB1EC06F2B0065B528 /* iOS93.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06D71EC06F2B0065B528 /* iOS93.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		701E06991EC059730065B528 /* iOS90.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS90.md; sourceTree = "<group>"; };
 		701E069A1EC059730065B528 /* iOS91.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS91.md; sourceTree = "<group>"; };
 		701E069B1EC059730065B528 /* iOS92.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS92.md; sourceTree = "<group>"; };
+		701E06D41EC06F2B0065B528 /* iOS90.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS90.md; sourceTree = "<group>"; };
+		701E06D51EC06F2B0065B528 /* iOS91.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS91.md; sourceTree = "<group>"; };
+		701E06D61EC06F2B0065B528 /* iOS92.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS92.md; sourceTree = "<group>"; };
+		701E06D71EC06F2B0065B528 /* iOS93.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS93.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,7 @@
 		701E06781EC058F30065B528 = {
 			isa = PBXGroup;
 			children = (
+				701E06C91EC064C70065B528 /* 指导 */,
 				701E06961EC058FF0065B528 /* Guides */,
 				701E06831EC058F30065B528 /* iOS9 */,
 				701E06821EC058F30065B528 /* Products */,
@@ -82,6 +91,17 @@
 				701E06991EC059730065B528 /* iOS90.md */,
 			);
 			path = Guides;
+			sourceTree = "<group>";
+		};
+		701E06C91EC064C70065B528 /* 指导 */ = {
+			isa = PBXGroup;
+			children = (
+				701E06D41EC06F2B0065B528 /* iOS90.md */,
+				701E06D51EC06F2B0065B528 /* iOS91.md */,
+				701E06D61EC06F2B0065B528 /* iOS92.md */,
+				701E06D71EC06F2B0065B528 /* iOS93.md */,
+			);
+			path = "指导";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,9 +180,13 @@
 				701E06981EC0594A0065B528 /* iOS93.md in Sources */,
 				701E069D1EC059730065B528 /* iOS91.md in Sources */,
 				701E06871EC058F30065B528 /* ViewController.swift in Sources */,
+				701E06D81EC06F2B0065B528 /* iOS90.md in Sources */,
+				701E06D91EC06F2B0065B528 /* iOS91.md in Sources */,
 				701E06851EC058F30065B528 /* AppDelegate.swift in Sources */,
 				701E069C1EC059730065B528 /* iOS90.md in Sources */,
 				701E069E1EC059730065B528 /* iOS92.md in Sources */,
+				701E06DB1EC06F2B0065B528 /* iOS93.md in Sources */,
+				701E06DA1EC06F2B0065B528 /* iOS92.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +348,7 @@
 				701E06951EC058F30065B528 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
