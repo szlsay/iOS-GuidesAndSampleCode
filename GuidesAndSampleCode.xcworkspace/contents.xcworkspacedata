@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:iOS8/iOS8.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:iOS9/iOS9.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:iOS10/iOS10.xcodeproj">
+   </FileRef>
+</Workspace>
