@@ -10,16 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: Interface 接口
+    
+    // MARK: lift Period 生命周期
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let button = UIButton()
+        button.frame = CGRect(x: 100, y: 100, width: 50, height: 44)
+        button.backgroundColor = .red
+        view.addSubview(button)
+        button.addTarget(self, action: #selector(click), for: .touchUpInside)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: Event Response 事件响应
+    func click()  {
+        navigationController?.pushViewController(ProvidingHapticFeedbackController(), animated: true)
     }
-
+    // MARK: Private Methods 私有方法
+    
+    // MARK: Setters 属性
+    
+    // MARK: Getters 属性
+    
 
 }
 
