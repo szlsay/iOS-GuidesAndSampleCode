@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:iOS11/iOS11.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:iOS8/iOS8.xcodeproj">
    </FileRef>
    <FileRef
