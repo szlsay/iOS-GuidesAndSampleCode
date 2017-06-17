@@ -1,0 +1,2303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Chapter 02"
+      name = "Chapter 02">
+      <FileRef
+         location = "group:MyCommandLine/MyCommandLine.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:MyFirstPlayground.playground">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:9781484203958.jpg">
+   </FileRef>
+   <Group
+      location = "group:Chapter 03"
+      name = "Chapter 03">
+      <FileRef
+         location = "group:SportsStore/SportsStore.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Tuples.playground">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Chapter 04"
+      name = "Chapter 04">
+      <Group
+         location = "group:ObjectTemplate"
+         name = "ObjectTemplate">
+         <Group
+            location = "group:ObjectTemplate"
+            name = "ObjectTemplate">
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Product.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:ObjectTemplate.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SportsStore"
+         name = "SportsStore">
+         <Group
+            location = "group:SportsStore"
+            name = "SportsStore">
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Product.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SportsStore.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:SportsStoreTests"
+            name = "SportsStoreTests">
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:SportsStoreTests.swift">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Chapter 05"
+      name = "Chapter 05">
+      <FileRef
+         location = "group:ArrayCopy.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Hiding.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Initialization.playground">
+      </FileRef>
+      <FileRef
+         location = "group:NSArray.playground">
+      </FileRef>
+      <FileRef
+         location = "group:NSCopying.playground">
+      </FileRef>
+      <FileRef
+         location = "group:ReferenceTypes.playground">
+      </FileRef>
+      <Group
+         location = "group:SportsStore"
+         name = "SportsStore">
+         <Group
+            location = "group:SportsStore"
+            name = "SportsStore">
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Logger.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Product.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SportsStore.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:SportsStoreTests"
+            name = "SportsStoreTests">
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:SportsStoreTests.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:ValueTypes.playground">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Chapter 06"
+      name = "Chapter 06">
+      <Group
+         location = "group:Singleton"
+         name = "Singleton">
+         <Group
+            location = "group:Singleton"
+            name = "Singleton">
+            <FileRef
+               location = "group:BackupServer.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Logger.swift">
+            </FileRef>
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Singleton.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SportsStore"
+         name = "SportsStore">
+         <Group
+            location = "group:SportsStore"
+            name = "SportsStore">
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Logger.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Product.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SportsStore.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:SportsStoreTests"
+            name = "SportsStoreTests">
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:SportsStoreTests.swift">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Chapter 07"
+      name = "Chapter 07">
+      <Group
+         location = "group:ObjectPool"
+         name = "ObjectPool">
+         <Group
+            location = "group:ObjectPool"
+            name = "ObjectPool">
+            <FileRef
+               location = "group:Book.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Library.swift">
+            </FileRef>
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Pool.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:ObjectPool.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SportsStore"
+         name = "SportsStore">
+         <Group
+            location = "group:SportsStore"
+            name = "SportsStore">
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Logger.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnection.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkPool.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Product.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDataStore.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SportsStore.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:SportsStoreTests"
+            name = "SportsStoreTests">
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:SportsStoreTests.swift">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Chapter 08"
+      name = "Chapter 08">
+      <Group
+         location = "group:ObjectPool"
+         name = "ObjectPool">
+         <Group
+            location = "group:ObjectPool"
+            name = "ObjectPool">
+            <FileRef
+               location = "group:Book.swift">
+            </FileRef>
+            <FileRef
+               location = "group:BookSources.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Library.swift">
+            </FileRef>
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Pool.swift">
+            </FileRef>
+            <FileRef
+               location = "group:PoolItem.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:ObjectPool.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SportsStore"
+         name = "SportsStore">
+         <Group
+            location = "group:SportsStore"
+            name = "SportsStore">
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Logger.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnection.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkPool.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Product.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDataStore.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SportsStore.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:SportsStoreTests"
+            name = "SportsStoreTests">
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:SportsStoreTests.swift">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Chapter 09"
+      name = "Chapter 09">
+      <Group
+         location = "group:FactoryMethod"
+         name = "FactoryMethod">
+         <Group
+            location = "group:FactoryMethod"
+            name = "FactoryMethod">
+            <FileRef
+               location = "group:CarSelector.swift">
+            </FileRef>
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+            <FileRef
+               location = "group:PriceCalculator.swift">
+            </FileRef>
+            <FileRef
+               location = "group:RentalCar.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:FactoryMethod.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SportsStore"
+         name = "SportsStore">
+         <Group
+            location = "group:SportsStore"
+            name = "SportsStore">
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Logger.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnection.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkPool.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Product.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDataStore.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SportsStore.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:SportsStoreTests"
+            name = "SportsStoreTests">
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:SportsStoreTests.swift">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Chapter 10"
+      name = "Chapter 10">
+      <Group
+         location = "group:AbstractFactory"
+         name = "AbstractFactory">
+         <Group
+            location = "group:AbstractFactory"
+            name = "AbstractFactory">
+            <FileRef
+               location = "group:Abstract.swift">
+            </FileRef>
+            <FileRef
+               location = "group:AbstractFactory-Bridging-Header.h">
+            </FileRef>
+            <FileRef
+               location = "group:CarParts.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Concrete.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Drivetrains.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Floorplans.swift">
+            </FileRef>
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Suspension.swift">
+            </FileRef>
+            <FileRef
+               location = "group:SuspensionOption.h">
+            </FileRef>
+            <FileRef
+               location = "group:SuspensionOption.m">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:AbstractFactory.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SportsStore"
+         name = "SportsStore">
+         <Group
+            location = "group:SportsStore"
+            name = "SportsStore">
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Logger.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnection.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkPool.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Product.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDataStore.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueFactories.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueImplementations.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SportsStore.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:SportsStoreTests"
+            name = "SportsStoreTests">
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:SportsStoreTests.swift">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Chapter 11"
+      name = "Chapter 11">
+      <Group
+         location = "group:Builder"
+         name = "Builder">
+         <Group
+            location = "group:Builder"
+            name = "Builder">
+            <FileRef
+               location = "group:Builder.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Food.swift">
+            </FileRef>
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Builder.xcodeproj">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:DateBuilder.playground">
+      </FileRef>
+      <Group
+         location = "group:SportsStore"
+         name = "SportsStore">
+         <Group
+            location = "group:SportsStore"
+            name = "SportsStore">
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:ChangeRecord.swift">
+            </FileRef>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Logger.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnection.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkPool.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Product.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDataStore.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueFactories.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueImplementations.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SportsStore.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:SportsStoreTests"
+            name = "SportsStoreTests">
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:SportsStoreTests.swift">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Chapter 12"
+      name = "Chapter 12">
+      <Group
+         location = "group:Adapter"
+         name = "Adapter">
+         <Group
+            location = "group:Adapter"
+            name = "Adapter">
+            <FileRef
+               location = "group:Adapter.swift">
+            </FileRef>
+            <FileRef
+               location = "group:DataSources.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Employees.swift">
+            </FileRef>
+            <FileRef
+               location = "group:EmployeeSearch.swift">
+            </FileRef>
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NewCo.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Adapter.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SportsStore"
+         name = "SportsStore">
+         <Group
+            location = "group:SportsStore"
+            name = "SportsStore">
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:ChangeRecord.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Euro.swift">
+            </FileRef>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Logger.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnection.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkPool.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Product.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDataStore.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueFactories.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueImplementations.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SportsStore.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:SportsStoreTests"
+            name = "SportsStoreTests">
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:SportsStoreTests.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:TwoWayAdapter.playground">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Chapter 13"
+      name = "Chapter 13">
+      <Group
+         location = "group:Bridge"
+         name = "Bridge">
+         <Group
+            location = "group:Bridge"
+            name = "Bridge">
+            <FileRef
+               location = "group:Bridge.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Channels.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Comms.swift">
+            </FileRef>
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Messages.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NewFeatures.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Bridge.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SportsStore"
+         name = "SportsStore">
+         <Group
+            location = "group:SportsStore"
+            name = "SportsStore">
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:ChangeRecord.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Euro.swift">
+            </FileRef>
+            <FileRef
+               location = "group:EventBridge.swift">
+            </FileRef>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Logger.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnection.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkPool.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Product.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDataStore.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueFactories.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueImplementations.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SportsStore.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:SportsStoreTests"
+            name = "SportsStoreTests">
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:SportsStoreTests.swift">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Chapter 14"
+      name = "Chapter 14">
+      <Group
+         location = "group:Decorator"
+         name = "Decorator">
+         <Group
+            location = "group:Decorator"
+            name = "Decorator">
+            <FileRef
+               location = "group:CustomerAccount.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Discounts.swift">
+            </FileRef>
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Options.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Purchase.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Decorator.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SportsStore"
+         name = "SportsStore">
+         <Group
+            location = "group:SportsStore"
+            name = "SportsStore">
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:ChangeRecord.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Euro.swift">
+            </FileRef>
+            <FileRef
+               location = "group:EventBridge.swift">
+            </FileRef>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Logger.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnection.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkPool.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Product.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDataStore.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDecorators.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueFactories.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueImplementations.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SportsStore.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:SportsStoreTests"
+            name = "SportsStoreTests">
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:SportsStoreTests.swift">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Chapter 15"
+      name = "Chapter 15">
+      <Group
+         location = "group:Composite"
+         name = "Composite">
+         <Group
+            location = "group:Composite"
+            name = "Composite">
+            <FileRef
+               location = "group:CarParts.swift">
+            </FileRef>
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Orders.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Composite.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SportsStore"
+         name = "SportsStore">
+         <Group
+            location = "group:SportsStore"
+            name = "SportsStore">
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:ChangeRecord.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Euro.swift">
+            </FileRef>
+            <FileRef
+               location = "group:EventBridge.swift">
+            </FileRef>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Logger.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnection.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkPool.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Product.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDataStore.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDecorators.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueFactories.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueImplementations.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SportsStore.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:SportsStoreTests"
+            name = "SportsStoreTests">
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:SportsStoreTests.swift">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Chapter 16"
+      name = "Chapter 16">
+      <Group
+         location = "group:Facade"
+         name = "Facade">
+         <Group
+            location = "group:Facade"
+            name = "Facade">
+            <FileRef
+               location = "group:Facade.swift">
+            </FileRef>
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+            <FileRef
+               location = "group:PirateCrew.swift">
+            </FileRef>
+            <FileRef
+               location = "group:PirateShip.swift">
+            </FileRef>
+            <FileRef
+               location = "group:TreasureMap.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Facade.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SportsStore"
+         name = "SportsStore">
+         <Group
+            location = "group:SportsStore"
+            name = "SportsStore">
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:ChangeRecord.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Euro.swift">
+            </FileRef>
+            <FileRef
+               location = "group:EventBridge.swift">
+            </FileRef>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Logger.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnection.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkPool.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Product.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDataStore.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDecorators.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockTotalFacade.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueFactories.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueImplementations.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SportsStore.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:SportsStoreTests"
+            name = "SportsStoreTests">
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:SportsStoreTests.swift">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:TextFacade.playground">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Chapter 17"
+      name = "Chapter 17">
+      <FileRef
+         location = "group:CopyOnWrite.playground">
+      </FileRef>
+      <Group
+         location = "group:Flyweight"
+         name = "Flyweight">
+         <Group
+            location = "group:Flyweight"
+            name = "Flyweight">
+            <FileRef
+               location = "group:Flyweight.swift">
+            </FileRef>
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Spreadsheet.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Flyweight.xcodeproj">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Numbers.playground">
+      </FileRef>
+      <Group
+         location = "group:SportsStore"
+         name = "SportsStore">
+         <Group
+            location = "group:SportsStore"
+            name = "SportsStore">
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:ChangeRecord.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Euro.swift">
+            </FileRef>
+            <FileRef
+               location = "group:EventBridge.swift">
+            </FileRef>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Logger.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnection.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnectionFlyweight.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkPool.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Product.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDataStore.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDecorators.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockTotalFacade.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueFactories.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueImplementations.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SportsStore.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:SportsStoreTests"
+            name = "SportsStoreTests">
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:SportsStoreTests.swift">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Chapter 18"
+      name = "Chapter 18">
+      <Group
+         location = "group:Proxy"
+         name = "Proxy">
+         <Group
+            location = "group:Proxy"
+            name = "Proxy">
+            <FileRef
+               location = "group:Auth.swift">
+            </FileRef>
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Proxy.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Proxy.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:ReferenceCounting"
+         name = "ReferenceCounting">
+         <Group
+            location = "group:ReferenceCounting"
+            name = "ReferenceCounting">
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkRequest.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:ReferenceCounting.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SportsStore"
+         name = "SportsStore">
+         <Group
+            location = "group:SportsStore"
+            name = "SportsStore">
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:ChangeRecord.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Euro.swift">
+            </FileRef>
+            <FileRef
+               location = "group:EventBridge.swift">
+            </FileRef>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Logger.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnection.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnectionFlyweight.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkPool.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Product.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDataStore.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDecorators.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Proxy.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockTotalFacade.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueFactories.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueImplementations.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SportsStore.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:SportsStoreTests"
+            name = "SportsStoreTests">
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:SportsStoreTests.swift">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Chapter 19"
+      name = "Chapter 19">
+      <Group
+         location = "group:ChainOfResp"
+         name = "ChainOfResp">
+         <Group
+            location = "group:ChainOfResp"
+            name = "ChainOfResp">
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Message.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Transmitters.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:ChainOfResp.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SportsStore"
+         name = "SportsStore">
+         <Group
+            location = "group:SportsStore"
+            name = "SportsStore">
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:ChangeRecord.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Euro.swift">
+            </FileRef>
+            <FileRef
+               location = "group:EventBridge.swift">
+            </FileRef>
+            <FileRef
+               location = "group:FormatterChain.swift">
+            </FileRef>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Logger.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnection.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnectionFlyweight.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkPool.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Product.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDataStore.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDecorators.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Proxy.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockTotalFacade.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueFactories.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueImplementations.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SportsStore.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:SportsStoreTests"
+            name = "SportsStoreTests">
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:SportsStoreTests.swift">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Chapter 20"
+      name = "Chapter 20">
+      <Group
+         location = "group:Command"
+         name = "Command">
+         <Group
+            location = "group:Command"
+            name = "Command">
+            <FileRef
+               location = "group:Calculator.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Commands.swift">
+            </FileRef>
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Command.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SportsStore"
+         name = "SportsStore">
+         <Group
+            location = "group:SportsStore"
+            name = "SportsStore">
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:ChangeRecord.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Euro.swift">
+            </FileRef>
+            <FileRef
+               location = "group:EventBridge.swift">
+            </FileRef>
+            <FileRef
+               location = "group:FormatterChain.swift">
+            </FileRef>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Logger.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnection.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnectionFlyweight.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkPool.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Product.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDataStore.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDecorators.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Proxy.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockTotalFacade.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueFactories.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueImplementations.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SportsStore.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:SportsStoreTests"
+            name = "SportsStoreTests">
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:SportsStoreTests.swift">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Chapter 21"
+      name = "Chapter 21">
+      <Group
+         location = "group:Mediator"
+         name = "Mediator">
+         <Group
+            location = "group:Mediator"
+            name = "Mediator">
+            <FileRef
+               location = "group:Airplane.swift">
+            </FileRef>
+            <FileRef
+               location = "group:CommandMediator.swift">
+            </FileRef>
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Mediator.swift">
+            </FileRef>
+            <FileRef
+               location = "group:MessageMediator.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Mediator.xcodeproj">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Notifications.playground">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Chapter 22"
+      name = "Chapter 22">
+      <Group
+         location = "group:KVO"
+         name = "KVO">
+         <Group
+            location = "group:KVO"
+            name = "KVO">
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:KVO.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Observer"
+         name = "Observer">
+         <Group
+            location = "group:Observer"
+            name = "Observer">
+            <FileRef
+               location = "group:Authentication.swift">
+            </FileRef>
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+            <FileRef
+               location = "group:MetaObserver.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Observer.swift">
+            </FileRef>
+            <FileRef
+               location = "group:SystemComponents.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Observer.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SportsStore"
+         name = "SportsStore">
+         <Group
+            location = "group:SportsStore"
+            name = "SportsStore">
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:ChangeRecord.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Euro.swift">
+            </FileRef>
+            <FileRef
+               location = "group:EventBridge.swift">
+            </FileRef>
+            <FileRef
+               location = "group:FormatterChain.swift">
+            </FileRef>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Logger.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnection.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnectionFlyweight.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkPool.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Product.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDataStore.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDecorators.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Proxy.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockTotalFacade.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueFactories.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueImplementations.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SportsStore.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:SportsStoreTests"
+            name = "SportsStoreTests">
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:SportsStoreTests.swift">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Chapter 23"
+      name = "Chapter 23">
+      <Group
+         location = "group:Memento"
+         name = "Memento">
+         <Group
+            location = "group:Memento"
+            name = "Memento">
+            <FileRef
+               location = "group:Ledger.swift">
+            </FileRef>
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Memento.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Memento.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:SportsStore"
+         name = "SportsStore">
+         <Group
+            location = "group:SportsStore"
+            name = "SportsStore">
+            <FileRef
+               location = "group:AppDelegate.swift">
+            </FileRef>
+            <Group
+               location = "group:Base.lproj"
+               name = "Base.lproj">
+               <FileRef
+                  location = "group:LaunchScreen.xib">
+               </FileRef>
+               <FileRef
+                  location = "group:Main.storyboard">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:ChangeRecord.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Euro.swift">
+            </FileRef>
+            <FileRef
+               location = "group:EventBridge.swift">
+            </FileRef>
+            <FileRef
+               location = "group:FormatterChain.swift">
+            </FileRef>
+            <Group
+               location = "group:Images.xcassets"
+               name = "Images.xcassets">
+               <Group
+                  location = "group:AppIcon.appiconset"
+                  name = "AppIcon.appiconset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:Logger.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnection.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkConnectionFlyweight.swift">
+            </FileRef>
+            <FileRef
+               location = "group:NetworkPool.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Product.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDataStore.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ProductDecorators.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Proxy.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockTotalFacade.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueFactories.swift">
+            </FileRef>
+            <FileRef
+               location = "group:StockValueImplementations.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Utils.swift">
+            </FileRef>
+            <FileRef
+               location = "group:ViewController.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:SportsStore.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:SportsStoreTests"
+            name = "SportsStoreTests">
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:SportsStoreTests.swift">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Chapter 24"
+      name = "Chapter 24">
+      <FileRef
+         location = "group:ProtocolStrategy.playground">
+      </FileRef>
+      <FileRef
+         location = "group:SelectorStrategy.playground">
+      </FileRef>
+      <Group
+         location = "group:Strategy"
+         name = "Strategy">
+         <Group
+            location = "group:Strategy"
+            name = "Strategy">
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Sequence.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Strategies.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Strategy.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Chapter 25"
+      name = "Chapter 25">
+      <FileRef
+         location = "group:DoubleDispatch.playground">
+      </FileRef>
+      <Group
+         location = "group:Visitor"
+         name = "Visitor">
+         <Group
+            location = "group:Visitor"
+            name = "Visitor">
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Shapes.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Visitor.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Visitor.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Chapter 26"
+      name = "Chapter 26">
+      <Group
+         location = "group:TemplateMethod"
+         name = "TemplateMethod">
+         <Group
+            location = "group:TemplateMethod"
+            name = "TemplateMethod">
+            <FileRef
+               location = "group:Donors.swift">
+            </FileRef>
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:TemplateMethod.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Chapter 27"
+      name = "Chapter 27">
+      <Group
+         location = "group:MVC"
+         name = "MVC">
+         <Group
+            location = "group:MVC"
+            name = "MVC">
+            <FileRef
+               location = "group:Commands.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Controllers.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Extensions.swift">
+            </FileRef>
+            <FileRef
+               location = "group:main.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Model.swift">
+            </FileRef>
+            <FileRef
+               location = "group:Views.swift">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:MVC.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+   <FileRef
+      location = "group:contributing.md">
+   </FileRef>
+   <FileRef
+      location = "group:LICENSE.txt">
+   </FileRef>
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+</Workspace>
