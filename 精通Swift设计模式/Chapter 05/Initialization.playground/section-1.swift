@@ -1,25 +1,28 @@
+//: Playground - noun: a place where people can play
+
 import Foundation
 
-class Sum : NSObject, NSCopying {
-    let resultsCache: [[Int]];
+// 1.如果实现是NSCopying 协议，需要重写copy方法
+class Sum : NSObject , NSCopying{
+    var resultsCache: [[Int]];
     var firstValue:Int;
     var secondValue:Int;
     
     init(first:Int, second:Int) {
-        resultsCache = [[Int]](count: 10, repeatedValue:
-            [Int](count:10, repeatedValue: 0));
+        
+        resultsCache = [[Int]].init(repeating: [Int].init(repeating: 0, count: 10), count: 10);
         for i in 0..<10 {
             for j in 0..<10 {
-                resultsCache[i][j] = i + j;
+                resultsCache[i][j] = i*10 + j;
             }
         }
-        self.firstValue = first;
-        self.secondValue = second;
+        firstValue = first;
+        secondValue = second;
     }
     
     private init(first:Int, second:Int, cache:[[Int]]) {
-        self.firstValue = first;
-        self.secondValue = second;
+        firstValue = first;
+        secondValue = second;
         resultsCache = cache;
     }
     
@@ -32,17 +35,22 @@ class Sum : NSObject, NSCopying {
         }
     }
     
-    func copyWithZone(zone: NSZone) -> AnyObject {
-        return Sum(first:self.firstValue,
-            second: self.secondValue,
-            cache: self.resultsCache);
+    func copy(with zone: NSZone? = nil) -> Any {
+        return Sum.init(first: self.firstValue, second: self.secondValue, cache: self.resultsCache)
     }
 }
 
-var prototype = Sum(first:0, second:9);
+var prototype = Sum(first:3, second:9);
+var clone = prototype;
 var calc1 = prototype.Result;
-var clone = prototype.copy() as Sum;
-clone.firstValue = 3; clone.secondValue = 8;
+clone.firstValue = 3;
+clone.secondValue = 8;
 var calc2 = clone.Result;
+print("Calc1: \(calc1) Calc2: \(calc2)");
 
-println("Calc1: \(calc1) Calc2: \(calc2)");
+print("\(prototype)");
+print("\(clone)");
+
+var cloneCopy = clone.copy()
+print("\(cloneCopy)");
+

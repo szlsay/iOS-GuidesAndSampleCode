@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <FileRef
+      location = "group:9781484203958.jpg">
+   </FileRef>
    <Group
       location = "group:Chapter 02"
       name = "Chapter 02">
@@ -11,9 +14,6 @@
          location = "group:MyFirstPlayground.playground">
       </FileRef>
    </Group>
-   <FileRef
-      location = "group:9781484203958.jpg">
-   </FileRef>
    <Group
       location = "group:Chapter 03"
       name = "Chapter 03">
@@ -106,6 +106,9 @@
       location = "group:Chapter 05"
       name = "Chapter 05">
       <FileRef
+         location = "group:SportsStore/SportsStore.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:ArrayCopy.playground">
       </FileRef>
       <FileRef
@@ -123,66 +126,6 @@
       <FileRef
          location = "group:ReferenceTypes.playground">
       </FileRef>
-      <Group
-         location = "group:SportsStore"
-         name = "SportsStore">
-         <Group
-            location = "group:SportsStore"
-            name = "SportsStore">
-            <FileRef
-               location = "group:AppDelegate.swift">
-            </FileRef>
-            <Group
-               location = "group:Base.lproj"
-               name = "Base.lproj">
-               <FileRef
-                  location = "group:LaunchScreen.xib">
-               </FileRef>
-               <FileRef
-                  location = "group:Main.storyboard">
-               </FileRef>
-            </Group>
-            <Group
-               location = "group:Images.xcassets"
-               name = "Images.xcassets">
-               <Group
-                  location = "group:AppIcon.appiconset"
-                  name = "AppIcon.appiconset">
-                  <FileRef
-                     location = "group:Contents.json">
-                  </FileRef>
-               </Group>
-            </Group>
-            <FileRef
-               location = "group:Info.plist">
-            </FileRef>
-            <FileRef
-               location = "group:Logger.swift">
-            </FileRef>
-            <FileRef
-               location = "group:Product.swift">
-            </FileRef>
-            <FileRef
-               location = "group:Utils.swift">
-            </FileRef>
-            <FileRef
-               location = "group:ViewController.swift">
-            </FileRef>
-         </Group>
-         <FileRef
-            location = "group:SportsStore.xcodeproj">
-         </FileRef>
-         <Group
-            location = "group:SportsStoreTests"
-            name = "SportsStoreTests">
-            <FileRef
-               location = "group:Info.plist">
-            </FileRef>
-            <FileRef
-               location = "group:SportsStoreTests.swift">
-            </FileRef>
-         </Group>
-      </Group>
       <FileRef
          location = "group:ValueTypes.playground">
       </FileRef>
