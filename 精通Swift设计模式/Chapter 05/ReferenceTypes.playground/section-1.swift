@@ -1,5 +1,6 @@
 
 // 只有类才可以实现NSCopying协议，结构体不可以。结构体本身实现了深复制
+
 import Foundation
 
 class Location : NSObject, NSCopying {
