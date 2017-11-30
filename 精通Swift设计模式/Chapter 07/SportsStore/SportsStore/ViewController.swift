@@ -11,7 +11,7 @@ class ProductTableCell : UITableViewCell {
 }
 
 var handler = { (p:Product) in
-    println("Change: \(p.name) \(p.stockLevel) items in stock");
+    print("Change: \(p.name) \(p.stockLevel) items in stock");
 };
 
 class ViewController: UIViewController, UITableViewDataSource {
@@ -25,7 +25,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         displayStockTotal();
         
         productStore.callback = {(p:Product) in
-            for cell in self.tableView.visibleCells() {
+            for cell in self.tableView.visibleCells {
                 if let pcell = cell as? ProductTableCell {
                     if pcell.product?.name == p.name {
                         pcell.stockStepper.value = Double(p.stockLevel);
@@ -41,16 +41,16 @@ class ViewController: UIViewController, UITableViewDataSource {
         super.didReceiveMemoryWarning()
     }
     
-    func tableView(tableView: UITableView,
+    func tableView(_ tableView: UITableView,
         numberOfRowsInSection section: Int) -> Int {
             return productStore.products.count;
     }
     
-    func tableView(tableView: UITableView,
-        cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView,
+        cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let product = productStore.products[indexPath.row];
-            let cell = tableView.dequeueReusableCellWithIdentifier("ProductCell")
-                as ProductTableCell;
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell")
+                as! ProductTableCell;
             cell.product = productStore.products[indexPath.row];
             cell.nameLabel.text = product.name;
             cell.descriptionLabel.text = product.productDescription;
@@ -59,16 +59,17 @@ class ViewController: UIViewController, UITableViewDataSource {
             return cell;
     }
     
-    @IBAction func stockLevelDidChange(sender: AnyObject) {
+    @IBAction func stockLevelDidChange(_ sender: AnyObject) {
         if var currentCell = sender as? UIView {
             while (true) {
                 currentCell = currentCell.superview!;
                 if let cell = currentCell as? ProductTableCell {
-                    if let product = cell.product? {
+                    if let product = cell.product {
                         if let stepper = sender as? UIStepper {
                             product.stockLevel = Int(stepper.value);
                         } else if let textfield = sender as? UITextField {
-                            if let newValue = textfield.text.toInt()? {
+                            let newValue = textfield.text.toInt()?
+                            if newValue {
                                 product.stockLevel = newValue;
                             }
                         }

@@ -3,13 +3,13 @@ import Foundation
 @objc protocol Suspension {
     var suspensionType:SuspensionOption { get };
     
-    class func getInstance() -> Suspension;
+    static func getInstance() -> Suspension;
 }
 
 class RoadSuspension : Suspension {
     var suspensionType = SuspensionOption.STANDARD;
     
-    private init() {};
+    fileprivate init() {};
     
     class func getInstance() -> Suspension {
         return RoadSuspension();
@@ -19,7 +19,7 @@ class RoadSuspension : Suspension {
 class OffRoadSuspension : Suspension {
     var suspensionType = SuspensionOption.SOFT;
     
-    private init() {};
+    fileprivate init() {};
     
     class func getInstance() -> Suspension {
         return OffRoadSuspension();
@@ -29,13 +29,13 @@ class OffRoadSuspension : Suspension {
 class RaceSuspension : NSObject, NSCopying, Suspension {
     var suspensionType = SuspensionOption.SPORTS;
     
-    private override init() {};
+    fileprivate override init() {};
     
-    func copyWithZone(zone: NSZone) -> AnyObject {
+    func copy(with zone: NSZone?) -> Any {
         return RaceSuspension();
     }
     
-    private class var prototype:RaceSuspension {
+    fileprivate class var prototype:RaceSuspension {
         get {
             struct SingletonWrapper {
                 static let singleton = RaceSuspension();
@@ -45,6 +45,6 @@ class RaceSuspension : NSObject, NSCopying, Suspension {
     }
     
     class func getInstance() -> Suspension {
-        return prototype.copy() as Suspension;
+        return prototype.copy() as! Suspension;
     }
 }

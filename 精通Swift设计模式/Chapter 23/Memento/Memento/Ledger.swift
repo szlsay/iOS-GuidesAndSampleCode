@@ -11,14 +11,14 @@ class LedgerEntry {
 }
 
 class LedgerMemento : Memento {
-    let data:NSData;
+    let data:Data;
     
-    init(data:NSData) { self.data = data;}
+    init(data:Data) { self.data = data;}
 }
 
 class Ledger : NSObject, Originator, NSCoding {
-    private var entries = [Int:LedgerEntry]();
-    private var nextId = 1;
+    fileprivate var entries = [Int:LedgerEntry]();
+    fileprivate var nextId = 1;
     var total:Float = 0;
     
     override init() {
@@ -27,42 +27,42 @@ class Ledger : NSObject, Originator, NSCoding {
     }
     
     required init(coder aDecoder: NSCoder) {
-        self.total = aDecoder.decodeFloatForKey("total");
-        self.nextId = aDecoder.decodeIntegerForKey("nextId");
-        self.entries.removeAll(keepCapacity: true);
-        if let entryArray = aDecoder.decodeDataObject()
+        self.total = aDecoder.decodeFloat(forKey: "total");
+        self.nextId = aDecoder.decodeInteger(forKey: "nextId");
+        self.entries.removeAll(keepingCapacity: true);
+        if let entryArray = aDecoder.decodeData()
             as AnyObject? as? [NSDictionary] {
                 for entryDict in entryArray {
-                    let id = entryDict["id"] as Int;
-                    let counterParty = entryDict["counterParty"] as String;
-                    let amount = entryDict["amount"] as Float;
+                    let id = entryDict["id"] as! Int;
+                    let counterParty = entryDict["counterParty"] as! String;
+                    let amount = entryDict["amount"] as! Float;
                     self.entries[id] = LedgerEntry(id: id, counterParty: counterParty,
                         amount: amount);
                 }
         }
     }
     
-    func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeFloat(total, forKey: "total");
-        aCoder.encodeInteger(nextId, forKey: "nextId");
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(total, forKey: "total");
+        aCoder.encode(nextId, forKey: "nextId");
         var entriesArray = [NSMutableDictionary]();
         for entry in self.entries.values {
-            var dict = NSMutableDictionary();
+            let dict = NSMutableDictionary();
             dict["id"] = entry.id;
             dict["counterParty"] = entry.counterParty;
             dict["amount"] = entry.amount;
             entriesArray.append(dict);
         }
-        aCoder.encodeObject(entriesArray);
+        aCoder.encode(entriesArray);
     }
     
     func createMemento() -> Memento {
-        return LedgerMemento(data: NSKeyedArchiver.archivedDataWithRootObject(self));
+        return LedgerMemento(data: NSKeyedArchiver.archivedData(withRootObject: self));
     }
     
-    func applyMemento(memento: Memento) {
+    func applyMemento(_ memento: Memento) {
         if let lmemento = memento as? LedgerMemento {
-            if let obj = NSKeyedUnarchiver.unarchiveObjectWithData(lmemento.data)
+            if let obj = NSKeyedUnarchiver.unarchiveObject(with: lmemento.data)
                 as? Ledger {
                     self.total = obj.total;
                     self.nextId = obj.nextId;
@@ -71,20 +71,24 @@ class Ledger : NSObject, Originator, NSCoding {
         }
     }
     
-    func addEntry(counterParty:String, amount:Float) {
-        let entry = LedgerEntry(id: nextId++, counterParty: counterParty,
+    func addEntry(_ counterParty:String, amount:Float) {
+        nextId += 1;
+        let entry = LedgerEntry(id: nextId, counterParty: counterParty,
             amount: amount);
         entries[entry.id] = entry;
         total += amount;
     }
     
     func printEntries() {
-        for id in entries.keys.array.sorted(<) {
-            if let entry = entries[id] {
-                println("#\(id): \(entry.counterParty) $\(entry.amount)");
-            }
+        for idSorted in entries.keys.sorted(by: <) {
+            print(idSorted)
         }
-        println("Total: $\(total)");
-        println("----");
+//        for id in entries.keys.sorted(by: < ) {
+//            if let entry = entries[id] {
+//                print("#\(id): \(entry.counterParty) $\(entry.amount)");
+//            }
+//        }
+//        print("Total: $\(total)");
+//        print("----");
     }
 }

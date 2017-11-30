@@ -1,18 +1,20 @@
 import Foundation
 
 final class Library {
-    private let pool:Pool<Book>;
+    fileprivate let pool:Pool<Book>;
     
-    private init(stockLevel:Int) {
+    fileprivate init(stockLevel:Int) {
         
         var stockId = 1;
         
         pool = Pool<Book>(
             itemCount:stockLevel,
             itemFactory: {() in
+                
+                stockId += 1;
                 return BookSeller.buyBook("Dickens, Charles",
-                    title: "Hard Times", stockNumber: stockId++)},
-            itemAllocator: {(var books) in
+                    title: "Hard Times", stockNumber: stockId)},
+            itemAllocator: {(books) in
                 var selected = 0;
                 for index in 1 ..< books.count {
                     if (books[index].checkoutCount < books[selected].checkoutCount) {
@@ -24,21 +26,21 @@ final class Library {
         );
     }
     
-    private class var singleton:Library {
+    fileprivate class var singleton:Library {
         struct SingletonWrapper {
             static let singleton = Library(stockLevel:5);
         }
         return SingletonWrapper.singleton;
     }
     
-    class func checkoutBook(reader:String) -> Book? {
-        var book = singleton.pool.getFromPool();
+    class func checkoutBook(_ reader:String) -> Book? {
+        let book = singleton.pool.getFromPool();
         book?.reader = reader;
-        book?.checkoutCount++;
+        book?.checkoutCount += 1;
         return book;
     }
     
-    class func returnBook(book:Book) {
+    class func returnBook(_ book:Book) {
         book.reader = nil;
         singleton.pool.returnToPool(book);
     }
@@ -46,15 +48,15 @@ final class Library {
     class func printReport() {
         singleton.pool.processPoolItems({(books) in
             for book in books {
-                println("...Book#\(book.stockNumber)...");
-                println("Checked out \(book.checkoutCount) times");
+                print("...Book#\(book.stockNumber)...");
+                print("Checked out \(book.checkoutCount) times");
                 if (book.reader != nil) {
-                    println("Checked out to \(book.reader!)");
+                    print("Checked out to \(book.reader!)");
                 } else {
-                    println("In stock");
+                    print("In stock");
                 }
             }
-            println("There are \(books.count) books in the pool");
+            print("There are \(books.count) books in the pool");
         });
     }
 }

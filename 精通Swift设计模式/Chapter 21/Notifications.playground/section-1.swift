@@ -1,24 +1,29 @@
 import Foundation;
 
-let notifier = NSNotificationCenter.defaultCenter();
+let notifier = NotificationCenter.default
 
-@objc class NotificationPeer {
+class NotificationPeer {
     let name:String;
     
     init(name:String) {
         self.name = name;
-        NSNotificationCenter.defaultCenter().addObserver(self,
-            selector: "receiveMessage:", name: "message", object: nil);
+        notifier.addObserver(self, selector:#selector(receiveMessage1(notification:)) , name: NSNotification.Name(rawValue: "message"), object: nil)
+//        notifier.addObserver(self, selector: NSSelectorFromString("receiveMessage1:"), name: NSNotification.Name(rawValue: "message"), object: nil)
     }
     
     func sendMessage(message:String) {
-        NSNotificationCenter.defaultCenter().postNotificationName("message",
+        notifier.post(name: NSNotification.Name(rawValue: "message"),
             object: message);
     }
     
-    func receiveMessage(notification:NSNotification) {
-        println("Peer \(name) received message: \(notification.object)");
+    @objc func receiveMessage(notification:NSNotification) {
+        print("Peer \(name) received message: \(String(describing: notification.object))");
     }
+    
+    @objc func receiveMessage1(notification:NSNotification) {
+        print("Peer \(name) received message: \(String(describing: notification.object))");
+    }
+    
 }
 
 let p1 = NotificationPeer(name: "peer1");
@@ -26,4 +31,5 @@ let p2 = NotificationPeer(name: "peer2");
 let p3 = NotificationPeer(name: "peer3");
 let p4 = NotificationPeer(name: "peer4");
 
-p3.sendMessage("Hello!");
+p3.sendMessage(message: "Hello!123");
+

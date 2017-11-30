@@ -1,32 +1,35 @@
 import Foundation
 
 class Pool<T> {
-    private var data = [T]();
-    private let arrayQ = dispatch_queue_create("arrayQ", DISPATCH_QUEUE_SERIAL);
-    private let semaphore:dispatch_semaphore_t;
+    fileprivate var data = [T]();
+    fileprivate let arrayQ = DispatchQueue(label: "arrayQ", attributes: []);
+    fileprivate let semaphore:DispatchSemaphore;
     
     init(items:[T]) {
         data.reserveCapacity(data.count);
         for item in items {
             data.append(item);
         }
-        semaphore = dispatch_semaphore_create(items.count);
+        semaphore = DispatchSemaphore(value: items.count);
     }
     
     func getFromPool() -> T? {
         var result:T?;
-        if (dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER) == 0) {
-            dispatch_sync(arrayQ, {() in
-                result = self.data.removeAtIndex(0);
+        
+        if (semaphore.wait(timeout: DispatchTime.distantFuture) == 0) {
+            arrayQ.sync(execute: {() in
+                result = self.data.remove(at: 0);
             })
         }
+        
+
         return result;
     }
     
-    func returnToPool(item:T) {
-        dispatch_async(arrayQ, {() in
+    func returnToPool(_ item:T) {
+        arrayQ.async(execute: {() in
             self.data.append(item);
-            dispatch_semaphore_signal(self.semaphore);
+            self.semaphore.signal();
         });
     }
 }

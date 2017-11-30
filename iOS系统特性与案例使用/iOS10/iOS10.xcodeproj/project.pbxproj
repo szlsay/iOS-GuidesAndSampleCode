@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67A1956A1F9A0D4F00F6B865 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A195691F9A0D4F00F6B865 /* TableViewController.swift */; };
 		701E065D1EC044DE0065B528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E065C1EC044DE0065B528 /* AppDelegate.swift */; };
 		701E065F1EC044DE0065B528 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701E065E1EC044DE0065B528 /* ViewController.swift */; };
 		701E06621EC044DE0065B528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 701E06601EC044DE0065B528 /* Main.storyboard */; };
@@ -20,35 +21,11 @@
 		701E06D01EC064FD0065B528 /* iOS101.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06CC1EC064FD0065B528 /* iOS101.md */; };
 		701E06D11EC064FD0065B528 /* iOS102.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06CD1EC064FD0065B528 /* iOS102.md */; };
 		701E06D21EC064FD0065B528 /* iOS103.md in Sources */ = {isa = PBXBuildFile; fileRef = 701E06CE1EC064FD0065B528 /* iOS103.md */; };
-		703FA92E1EC4422000BDC0B1 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703FA92D1EC4422000BDC0B1 /* IntentHandler.swift */; };
-		703FA9371EC4422000BDC0B1 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703FA9361EC4422000BDC0B1 /* IntentsUI.framework */; };
-		703FA93A1EC4422000BDC0B1 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703FA9391EC4422000BDC0B1 /* IntentViewController.swift */; };
-		703FA93D1EC4422100BDC0B1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 703FA93B1EC4422100BDC0B1 /* MainInterface.storyboard */; };
-		703FA9411EC4422100BDC0B1 /* IntentsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 703FA9341EC4422000BDC0B1 /* IntentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		703FA9441EC4422100BDC0B1 /* Intents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 703FA92B1EC4422000BDC0B1 /* Intents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		703FA94C1EC442F400BDC0B1 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703FA9361EC4422000BDC0B1 /* IntentsUI.framework */; };
 		703FA94E1EC442F500BDC0B1 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703FA94D1EC442F500BDC0B1 /* Intents.framework */; };
-		703FA94F1EC4431400BDC0B1 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703FA94D1EC442F500BDC0B1 /* Intents.framework */; };
 		70BFF9EE1EC165C6006A1EE6 /* iOS10新特性.pptx in Resources */ = {isa = PBXBuildFile; fileRef = 70BFF9ED1EC165C6006A1EE6 /* iOS10新特性.pptx */; };
 		70BFF9F01EC1B388006A1EE6 /* ProvidingHapticFeedbackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFF9EF1EC1B388006A1EE6 /* ProvidingHapticFeedbackController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		703FA93F1EC4422100BDC0B1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 701E06511EC044DE0065B528 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 703FA9331EC4422000BDC0B1;
-			remoteInfo = IntentsUI;
-		};
-		703FA9421EC4422100BDC0B1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 701E06511EC044DE0065B528 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 703FA92A1EC4422000BDC0B1;
-			remoteInfo = Intents;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		703FA94B1EC4422100BDC0B1 /* Embed App Extensions */ = {
@@ -57,8 +34,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				703FA9441EC4422100BDC0B1 /* Intents.appex in Embed App Extensions */,
-				703FA9411EC4422100BDC0B1 /* IntentsUI.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +41,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		67A195691F9A0D4F00F6B865 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		701E06591EC044DE0065B528 /* iOS10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		701E065C1EC044DE0065B528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		701E065E1EC044DE0065B528 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,14 +57,7 @@
 		701E06CC1EC064FD0065B528 /* iOS101.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS101.md; sourceTree = "<group>"; };
 		701E06CD1EC064FD0065B528 /* iOS102.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS102.md; sourceTree = "<group>"; };
 		701E06CE1EC064FD0065B528 /* iOS103.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = iOS103.md; sourceTree = "<group>"; };
-		703FA92B1EC4422000BDC0B1 /* Intents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Intents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		703FA92D1EC4422000BDC0B1 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
-		703FA92F1EC4422000BDC0B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		703FA9341EC4422000BDC0B1 /* IntentsUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentsUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		703FA9361EC4422000BDC0B1 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
-		703FA9391EC4422000BDC0B1 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
-		703FA93C1EC4422100BDC0B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		703FA93E1EC4422100BDC0B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		703FA94D1EC442F500BDC0B1 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		70BFF9ED1EC165C6006A1EE6 /* iOS10新特性.pptx */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iOS10新特性.pptx"; sourceTree = "<group>"; };
 		70BFF9EF1EC1B388006A1EE6 /* ProvidingHapticFeedbackController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvidingHapticFeedbackController.swift; sourceTree = "<group>"; };
@@ -104,22 +73,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		703FA9281EC4422000BDC0B1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				703FA94F1EC4431400BDC0B1 /* Intents.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		703FA9311EC4422000BDC0B1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				703FA9371EC4422000BDC0B1 /* IntentsUI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -130,8 +83,6 @@
 				701E06CA1EC064CC0065B528 /* 指导 */,
 				701E066F1EC047C30065B528 /* Guides */,
 				701E065B1EC044DE0065B528 /* iOS10 */,
-				703FA92C1EC4422000BDC0B1 /* Intents */,
-				703FA9381EC4422000BDC0B1 /* IntentsUI */,
 				703FA9351EC4422000BDC0B1 /* Frameworks */,
 				701E065A1EC044DE0065B528 /* Products */,
 			);
@@ -141,8 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				701E06591EC044DE0065B528 /* iOS10.app */,
-				703FA92B1EC4422000BDC0B1 /* Intents.appex */,
-				703FA9341EC4422000BDC0B1 /* IntentsUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				701E065C1EC044DE0065B528 /* AppDelegate.swift */,
+				67A195691F9A0D4F00F6B865 /* TableViewController.swift */,
 				701E065E1EC044DE0065B528 /* ViewController.swift */,
 				70BFF9EF1EC1B388006A1EE6 /* ProvidingHapticFeedbackController.swift */,
 				701E06601EC044DE0065B528 /* Main.storyboard */,
@@ -183,15 +133,6 @@
 			path = "指导";
 			sourceTree = "<group>";
 		};
-		703FA92C1EC4422000BDC0B1 /* Intents */ = {
-			isa = PBXGroup;
-			children = (
-				703FA92D1EC4422000BDC0B1 /* IntentHandler.swift */,
-				703FA92F1EC4422000BDC0B1 /* Info.plist */,
-			);
-			path = Intents;
-			sourceTree = "<group>";
-		};
 		703FA9351EC4422000BDC0B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,16 +140,6 @@
 				703FA9361EC4422000BDC0B1 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		703FA9381EC4422000BDC0B1 /* IntentsUI */ = {
-			isa = PBXGroup;
-			children = (
-				703FA9391EC4422000BDC0B1 /* IntentViewController.swift */,
-				703FA93B1EC4422100BDC0B1 /* MainInterface.storyboard */,
-				703FA93E1EC4422100BDC0B1 /* Info.plist */,
-			);
-			path = IntentsUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,47 +157,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				703FA9401EC4422100BDC0B1 /* PBXTargetDependency */,
-				703FA9431EC4422100BDC0B1 /* PBXTargetDependency */,
 			);
 			name = iOS10;
 			productName = iOS10;
 			productReference = 701E06591EC044DE0065B528 /* iOS10.app */;
 			productType = "com.apple.product-type.application";
-		};
-		703FA92A1EC4422000BDC0B1 /* Intents */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 703FA94A1EC4422100BDC0B1 /* Build configuration list for PBXNativeTarget "Intents" */;
-			buildPhases = (
-				703FA9271EC4422000BDC0B1 /* Sources */,
-				703FA9281EC4422000BDC0B1 /* Frameworks */,
-				703FA9291EC4422000BDC0B1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Intents;
-			productName = Intents;
-			productReference = 703FA92B1EC4422000BDC0B1 /* Intents.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
-		703FA9331EC4422000BDC0B1 /* IntentsUI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 703FA9491EC4422100BDC0B1 /* Build configuration list for PBXNativeTarget "IntentsUI" */;
-			buildPhases = (
-				703FA9301EC4422000BDC0B1 /* Sources */,
-				703FA9311EC4422000BDC0B1 /* Frameworks */,
-				703FA9321EC4422000BDC0B1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = IntentsUI;
-			productName = IntentsUI;
-			productReference = 703FA9341EC4422000BDC0B1 /* IntentsUI.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -279,16 +174,6 @@
 				ORGANIZATIONNAME = ST;
 				TargetAttributes = {
 					701E06581EC044DE0065B528 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = Z25J3BA353;
-						ProvisioningStyle = Automatic;
-					};
-					703FA92A1EC4422000BDC0B1 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = Z25J3BA353;
-						ProvisioningStyle = Automatic;
-					};
-					703FA9331EC4422000BDC0B1 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = Z25J3BA353;
 						ProvisioningStyle = Automatic;
@@ -309,8 +194,6 @@
 			projectRoot = "";
 			targets = (
 				701E06581EC044DE0065B528 /* iOS10 */,
-				703FA92A1EC4422000BDC0B1 /* Intents */,
-				703FA9331EC4422000BDC0B1 /* IntentsUI */,
 			);
 		};
 /* End PBXProject section */
@@ -328,21 +211,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		703FA9291EC4422000BDC0B1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		703FA9321EC4422000BDC0B1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				703FA93D1EC4422100BDC0B1 /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -356,6 +224,7 @@
 				701E06731EC04D430065B528 /* iOS102.md in Sources */,
 				701E06751EC04E200065B528 /* iOS101.md in Sources */,
 				701E06771EC04F320065B528 /* iOS100.md in Sources */,
+				67A1956A1F9A0D4F00F6B865 /* TableViewController.swift in Sources */,
 				701E065F1EC044DE0065B528 /* ViewController.swift in Sources */,
 				701E06D21EC064FD0065B528 /* iOS103.md in Sources */,
 				701E06D11EC064FD0065B528 /* iOS102.md in Sources */,
@@ -363,36 +232,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		703FA9271EC4422000BDC0B1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				703FA92E1EC4422000BDC0B1 /* IntentHandler.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		703FA9301EC4422000BDC0B1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				703FA93A1EC4422000BDC0B1 /* IntentViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		703FA9401EC4422100BDC0B1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 703FA9331EC4422000BDC0B1 /* IntentsUI */;
-			targetProxy = 703FA93F1EC4422100BDC0B1 /* PBXContainerItemProxy */;
-		};
-		703FA9431EC4422100BDC0B1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 703FA92A1EC4422000BDC0B1 /* Intents */;
-			targetProxy = 703FA9421EC4422100BDC0B1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		701E06601EC044DE0065B528 /* Main.storyboard */ = {
@@ -409,14 +249,6 @@
 				701E06661EC044DE0065B528 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		703FA93B1EC4422100BDC0B1 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				703FA93C1EC4422100BDC0B1 /* Base */,
-			);
-			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -462,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -505,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -541,58 +373,6 @@
 			};
 			name = Release;
 		};
-		703FA9451EC4422100BDC0B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = Z25J3BA353;
-				INFOPLIST_FILE = Intents/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.st.cn.iOS10.Intents;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		703FA9461EC4422100BDC0B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = Z25J3BA353;
-				INFOPLIST_FILE = Intents/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.st.cn.iOS10.Intents;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		703FA9471EC4422100BDC0B1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = Z25J3BA353;
-				INFOPLIST_FILE = IntentsUI/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.st.cn.iOS10.IntentsUI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		703FA9481EC4422100BDC0B1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = Z25J3BA353;
-				INFOPLIST_FILE = IntentsUI/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.st.cn.iOS10.IntentsUI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -613,22 +393,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		703FA9491EC4422100BDC0B1 /* Build configuration list for PBXNativeTarget "IntentsUI" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				703FA9471EC4422100BDC0B1 /* Debug */,
-				703FA9481EC4422100BDC0B1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		703FA94A1EC4422100BDC0B1 /* Build configuration list for PBXNativeTarget "Intents" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				703FA9451EC4422100BDC0B1 /* Debug */,
-				703FA9461EC4422100BDC0B1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

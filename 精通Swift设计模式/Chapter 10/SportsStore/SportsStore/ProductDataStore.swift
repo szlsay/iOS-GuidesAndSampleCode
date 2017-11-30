@@ -2,23 +2,23 @@ import Foundation
 
 final class ProductDataStore {
     var callback:((Product) -> Void)?;
-    private var networkQ:dispatch_queue_t
-    private var uiQ:dispatch_queue_t;
+    fileprivate var networkQ:DispatchQueue
+    fileprivate var uiQ:DispatchQueue;
     lazy var products:[Product] = self.loadData();
     
     init() {
-        networkQ = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0);
-        uiQ = dispatch_get_main_queue();
+        networkQ = DispatchQueue.global(priority: DispatchQueue.GlobalQueuePriority.background);
+        uiQ = DispatchQueue.main;
     }
     
-    private func loadData() -> [Product] {
+    fileprivate func loadData() -> [Product] {
         for p in productData {
-            dispatch_async(self.networkQ, {() in
+            self.networkQ.async(execute: {() in
                 let stockConn = NetworkPool.getConnection();
                 let level = stockConn.getStockLevel(p.name);
                 if (level != nil) {
                     p.stockLevel = level!;
-                    dispatch_async(self.uiQ, {() in
+                    self.uiQ.async(execute: {() in
                         if (self.callback != nil) {
                             self.callback!(p);
                         }
@@ -30,7 +30,7 @@ final class ProductDataStore {
         return productData;
     }
     
-    private var productData:[Product] = [
+    fileprivate var productData:[Product] = [
         Product.createProduct("Kayak", description:"A boat for one person",
             category:"Watersports", price:275.0, stockLevel:0),
         Product.createProduct("Lifejacket",

@@ -3,38 +3,38 @@ import Foundation;
 protocol Peer {
     var name:String {get};
     var currentPosition:Position {get};
-    func otherPlaneDidChangePosition(position:Position) -> Bool;
+    func otherPlaneDidChangePosition(_ position:Position) -> Bool;
 }
 
 protocol Mediator {
-    func registerPeer(peer:Peer);
-    func unregisterPeer(peer:Peer);
-    func changePosition(peer:Peer, pos:Position) -> Bool;
+    func registerPeer(_ peer:Peer);
+    func unregisterPeer(_ peer:Peer);
+    func changePosition(_ peer:Peer, pos:Position) -> Bool;
 }
 
 class AirplaneMediator : Mediator {
-    private var peers:[String:Peer];
-    private let queue = dispatch_queue_create("dictQ", DISPATCH_QUEUE_CONCURRENT);
+    fileprivate var peers:[String:Peer];
+    fileprivate let queue = DispatchQueue(label: "dictQ", attributes: DispatchQueue.Attributes.concurrent);
     
     init() {
         peers = [String:Peer]();
     }
     
-    func registerPeer(peer: Peer) {
-        dispatch_barrier_sync(self.queue, { () in
+    func registerPeer(_ peer: Peer) {
+        self.queue.sync(flags: .barrier, execute: { () in
             self.peers[peer.name] = peer;
         });
     }
     
-    func unregisterPeer(peer: Peer) {
-        dispatch_barrier_sync(self.queue, { () in
-            let removed = self.peers.removeValueForKey(peer.name);
+    func unregisterPeer(_ peer: Peer) {
+        self.queue.sync(flags: .barrier, execute: { () in
+            _ = self.peers.removeValue(forKey: peer.name);
         });
     }
     
-    func changePosition(peer:Peer, pos:Position) -> Bool {
+    func changePosition(_ peer:Peer, pos:Position) -> Bool {
         var result = false;
-        dispatch_sync(self.queue, { () in
+        self.queue.sync(execute: { () in
             
             let closerPeers = self.peers.values.filter({p in
                 return p.currentPosition.distanceFromRunway

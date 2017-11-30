@@ -8,7 +8,7 @@ class CustomerAccount {
         self.customerName = name;
     }
     
-    func addPurchase(purchase:Purchase) {
+    func addPurchase(_ purchase:Purchase) {
         self.purchases.append(purchase);
     }
     
@@ -16,14 +16,14 @@ class CustomerAccount {
         var total:Float = 0;
         for p in purchases {
             total += p.totalPrice;
-            println("Purchase \(p), Price \(formatCurrencyString(p.totalPrice))");
+            print("Purchase \(p), Price \(formatCurrencyString(p.totalPrice))");
         }
-        println("Total due: \(formatCurrencyString(total))");
+        print("Total due: \(formatCurrencyString(total))");
     }
     
-    func formatCurrencyString(number:Float) -> String {
-        let formatter = NSNumberFormatter();
-        formatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle;
-        return formatter.stringFromNumber(number) ?? "";
+    func formatCurrencyString(_ number:Float) -> String {
+        let formatter = NumberFormatter();
+        formatter.numberStyle = NumberFormatter.Style.currency;
+        return formatter.string(from: NSNumber(value:number)) ?? "";
     }
 }

@@ -16,7 +16,7 @@ class CarFactory {
         fatalError("Not implemented");
     }
     
-    final class func getFactory(car:Cars) -> CarFactory? {
+    final class func getFactory(_ car:Cars) -> CarFactory? {
         var factoryType:CarFactory.Type;
         switch (car) {
         case .COMPACT:
@@ -28,7 +28,7 @@ class CarFactory {
         }
         var factory = factoryType.sharedInstance;
         if (factory == nil) {
-            factory = factoryType();
+            factory = factoryType.init();
         }
         return factory;
     }

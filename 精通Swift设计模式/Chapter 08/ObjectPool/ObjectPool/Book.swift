@@ -1,6 +1,6 @@
 import Foundation;
 
-@objc class Book : PoolItem {
+class Book : PoolItem {
     let author:String;
     let title:String;
     let stockNumber:Int;
@@ -17,7 +17,7 @@ import Foundation;
         get {
             let reusable = checkoutCount < 5
             if (!reusable) {
-                println("Eject: Book#\(self.stockNumber)");
+                print("Eject: Book#\(self.stockNumber)");
             }
             return reusable;
         }

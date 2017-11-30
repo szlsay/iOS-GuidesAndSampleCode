@@ -1,6 +1,6 @@
-class Purchase : Printable {
-    private let product:String;
-    private let price:Float;
+class Purchase : CustomStringConvertible {
+    fileprivate let product:String;
+    fileprivate let price:Float;
     
     init(product:String, price:Float) {
         self.product = product;

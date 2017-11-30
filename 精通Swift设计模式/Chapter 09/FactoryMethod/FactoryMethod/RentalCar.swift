@@ -1,9 +1,9 @@
 class RentalCar {
-    private var nameBV:String;
-    private var passengersBV:Int;
-    private var priceBV:Float;
+    fileprivate var nameBV:String;
+    fileprivate var passengersBV:Int;
+    fileprivate var priceBV:Float;
     
-    private init(name:String, passengers:Int, price:Float) {
+    fileprivate init(name:String, passengers:Int, price:Float) {
         self.nameBV = name;
         self.passengersBV = passengers;
         self.priceBV = price;
@@ -13,7 +13,7 @@ class RentalCar {
     final var passengers:Int { get { return passengersBV; }};
     final var pricePerDay:Float { get { return priceBV; }};
     
-    class func createRentalCar(passengers:Int) -> RentalCar? {
+    class func createRentalCar(_ passengers:Int) -> RentalCar? {
         var carImpl:RentalCar.Type?;
         switch (passengers) {
             case 0...3:
@@ -29,15 +29,15 @@ class RentalCar {
 
 class Compact : RentalCar {
     
-    private convenience init() {
+    fileprivate convenience init() {
         self.init(name: "VW Golf", passengers: 3, price: 20);
     }
     
-    private override init(name: String, passengers: Int, price: Float) {
+    fileprivate override init(name: String, passengers: Int, price: Float) {
         super.init(name: name, passengers: passengers, price: price);
     }
     
-    override class func createRentalCar(passengers:Int) -> RentalCar? {
+    override class func createRentalCar(_ passengers:Int) -> RentalCar? {
         if (passengers < 2) {
             return sharedInstance;
         } else {
@@ -57,7 +57,7 @@ class Compact : RentalCar {
 
 class SmallCompact : Compact {
 
-    private init() {
+    fileprivate init() {
         super.init(name: "Ford Fiesta", passengers: 3, price: 15);
     }
     
@@ -73,11 +73,11 @@ class SmallCompact : Compact {
 
 class SUV : RentalCar {
 
-    private init() {
+    fileprivate init() {
         super.init(name: "Cadillac Escalade", passengers: 8, price: 75);
     }
 
-    override class func createRentalCar(passengers:Int) -> RentalCar? {
+    override class func createRentalCar(_ passengers:Int) -> RentalCar? {
         return SUV();
     }
 }

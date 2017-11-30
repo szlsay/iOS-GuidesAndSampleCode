@@ -3,8 +3,8 @@ protocol CarPart {
     var name:String { get };
     var price:Float { get };
     
-    func addPart(part:CarPart) -> Void;
-    func removePart(part:CarPart) -> Void;
+    func addPart(_ part:CarPart) -> Void;
+    func removePart(_ part:CarPart) -> Void;
 }
 
 class Part : CarPart {
@@ -15,11 +15,11 @@ class Part : CarPart {
         self.name = name; self.price = price;
     }
     
-    func addPart(part: CarPart) {
+    func addPart(_ part: CarPart) {
         // do nothing
     }
     
-    func removePart(part: CarPart) {
+    func removePart(_ part: CarPart) {
         // do nothing
     }
 }
@@ -27,26 +27,30 @@ class Part : CarPart {
 
 class CompositePart : CarPart {
     let name:String;
-    private var parts:[CarPart];
+    fileprivate var parts:[CarPart];
     
     init(name:String, parts:CarPart...) {
         self.name = name; self.parts = parts;
     }
     
-    var price:Float {
-        return reduce(parts, 0, {subtotal, part in
-            return subtotal + part.price;
-        });
-    }
+//    var price:Float {
+//        return reduce(0) { (subtotal, part) in
+//            subtotal + part.price
+//        
+//        }
+//        return reduce(parts, 0, {subtotal, part in
+//             subtotal + part.price;
+//        });
+//    }
     
-    func addPart(part:CarPart) {
+    func addPart(_ part:CarPart) {
         parts.append(part);
     }
     
-    func removePart(part:CarPart) {
+    func removePart(_ part:CarPart) {
         for index in 0 ..< parts.count {
             if (parts[index].name  == part.name) {
-                parts.removeAtIndex(index);
+                parts.remove(at: index);
                 break;
             }
         }

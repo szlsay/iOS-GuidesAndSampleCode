@@ -1,47 +1,47 @@
 import Foundation
 
 class Pool<T:AnyObject> {
-    private var data = [T]();
-    private let arrayQ = dispatch_queue_create("arrayQ", DISPATCH_QUEUE_SERIAL);
-    private let semaphore:dispatch_semaphore_t;
+    fileprivate var data = [T]();
+    fileprivate let arrayQ = DispatchQueue(label: "arrayQ", attributes: []);
+    fileprivate let semaphore:DispatchSemaphore;
     
-    private let itemFactory: () -> T;
-    private let itemAllocator:[T] -> Int;
-    private let maxItemCount:Int;
-    private var createdCount:Int = 0;
+    fileprivate let itemFactory: () -> T;
+    fileprivate let itemAllocator:([T]) -> Int;
+    fileprivate let maxItemCount:Int;
+    fileprivate var createdCount:Int = 0;
     
-    init(itemCount:Int, itemFactory:() -> T, itemAllocator:([T] -> Int)) {
+    init(itemCount:Int, itemFactory:@escaping () -> T, itemAllocator:@escaping (([T]) -> Int)) {
         self.maxItemCount = itemCount;
         self.itemFactory = itemFactory;
         self.itemAllocator = itemAllocator;
-        self.semaphore = dispatch_semaphore_create(itemCount);
+        self.semaphore = DispatchSemaphore(value: itemCount);
     }
     
     func getFromPool() -> T? {
         var result:T?;
         
-        if (dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER) == 0) {
-            dispatch_sync(arrayQ, {() in
+        if (semaphore.wait(timeout: DispatchTime.distantFuture) == 0) {
+            arrayQ.sync(execute: {() in
                 if (self.data.count == 0) {
                     result = self.itemFactory();
-                    self.createdCount++;
+                    self.createdCount += 1;
                 } else {
-                    result = self.data.removeAtIndex(self.itemAllocator(self.data));
+                    result = self.data.remove(at: self.itemAllocator(self.data));
                 }
             })
         }
         return result;
     }
     
-    func returnToPool(item:T) {
-        dispatch_async(arrayQ, {() in
+    func returnToPool(_ item:T) {
+        arrayQ.async(execute: {() in
             self.data.append(item);
-            dispatch_semaphore_signal(self.semaphore);
+            self.semaphore.signal();
         });
     }
     
-    func processPoolItems(callback:[T] -> Void) {
-        dispatch_barrier_sync(arrayQ, {() in
+    func processPoolItems(_ callback:([T]) -> Void) {
+        arrayQ.sync(flags: .barrier, execute: {() in
             callback(self.data);
         });
     }

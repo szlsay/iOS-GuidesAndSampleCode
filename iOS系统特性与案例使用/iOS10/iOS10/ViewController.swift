@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StoreKit
 
 class ViewController: UIViewController {
 
@@ -26,7 +27,9 @@ class ViewController: UIViewController {
     
     // MARK: Event Response 事件响应
     func click()  {
-        navigationController?.pushViewController(ProvidingHapticFeedbackController(), animated: true)
+        
+        SKStoreReviewController.requestReview()
+//        navigationController?.pushViewController(ProvidingHapticFeedbackController(), animated: true)
     }
     // MARK: Private Methods 私有方法
     

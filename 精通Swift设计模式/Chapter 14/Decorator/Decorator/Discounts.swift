@@ -1,5 +1,5 @@
 class DiscountDecorator: Purchase {
-    private let wrappedPurchase:Purchase;
+    fileprivate let wrappedPurchase:Purchase;
     
     init(purchase:Purchase) {
         self.wrappedPurchase = purchase;

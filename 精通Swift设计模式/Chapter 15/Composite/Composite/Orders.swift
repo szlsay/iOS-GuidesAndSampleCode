@@ -15,12 +15,12 @@ class CustomerOrder {
     }
     
     func printDetails() {
-        println("Order for \(customer): Cost: \(formatCurrencyString(totalPrice))");
+        print("Order for \(customer): Cost: \(formatCurrencyString(totalPrice))");
     }
     
-    func formatCurrencyString(number:Float) -> String {
-        let formatter = NSNumberFormatter();
-        formatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle;
-        return formatter.stringFromNumber(number) ?? "";
+    func formatCurrencyString(_ number:Float) -> String {
+        let formatter = NumberFormatter();
+        formatter.numberStyle = NumberFormatter.Style.currency;
+        return formatter.string(from: NSNumber(value:number)) ?? "";
     }
 }

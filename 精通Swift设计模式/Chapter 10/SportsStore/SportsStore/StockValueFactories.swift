@@ -3,15 +3,15 @@ import Foundation
 class StockTotalFactory {
     
     enum Currency {
-        case USD
-        case GBP
+        case usd
+        case gbp
     }
     
-    private(set) var formatter:StockValueFormatter?;
-    private(set) var converter:StockValueConverter?;
+    fileprivate(set) var formatter:StockValueFormatter?;
+    fileprivate(set) var converter:StockValueConverter?;
     
-    class func getFactory(curr:Currency) -> StockTotalFactory {
-        if (curr == Currency.USD) {
+    class func getFactory(_ curr:Currency) -> StockTotalFactory {
+        if (curr == Currency.usd) {
             return DollarStockTotalFactory.sharedInstance;
         } else {
             return PoundStockTotalFactory.sharedInstance;
@@ -21,7 +21,7 @@ class StockTotalFactory {
 
 private class DollarStockTotalFactory : StockTotalFactory {
     
-    private override init() {
+    fileprivate override init() {
         super.init();
         formatter = DollarStockValueFormatter();
         converter = DollarStockValueConverter();
@@ -39,7 +39,7 @@ private class DollarStockTotalFactory : StockTotalFactory {
 
 private class PoundStockTotalFactory : StockTotalFactory {
     
-    private override init() {
+    fileprivate override init() {
         super.init();
         formatter = PoundStockValueFormatter();
         converter = PoundStockValueConverter();

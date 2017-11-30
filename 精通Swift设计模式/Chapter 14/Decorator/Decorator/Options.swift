@@ -1,11 +1,11 @@
 class GiftOptionDecorator : Purchase {
-    private let wrappedPurchase:Purchase;
-    private let options:[OPTION];
+    fileprivate let wrappedPurchase:Purchase;
+    fileprivate let options:[OPTION];
     
     enum OPTION {
-        case GIFTWRAP;
-        case RIBBON;
-        case DELIVERY;
+        case giftwrap;
+        case ribbon;
+        case delivery;
     }
     
     init(purchase:Purchase, options:OPTION...) {
@@ -18,11 +18,11 @@ class GiftOptionDecorator : Purchase {
         var result = wrappedPurchase.description;
         for option in options {
             switch (option) {
-            case .GIFTWRAP:
+            case .giftwrap:
                 result = "\(result) + giftwrap";
-            case .RIBBON:
+            case .ribbon:
                 result = "\(result) + ribbon";
-            case .DELIVERY:
+            case .delivery:
                 result = "\(result) + delivery";
             }
         }
@@ -33,11 +33,11 @@ class GiftOptionDecorator : Purchase {
         var result = wrappedPurchase.totalPrice;
         for option in options {
             switch (option) {
-            case .GIFTWRAP:
+            case .giftwrap:
                 result += 2;
-            case .RIBBON:
+            case .ribbon:
                 result += 1;
-            case .DELIVERY:
+            case .delivery:
                 result += 5;
             }
         }
