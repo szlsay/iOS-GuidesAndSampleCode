@@ -328,8 +328,180 @@ extension Array where Element: Equatable {
 
 // 建议大多情况下不要用forEach
 
+/// 数据类型
+// 切片
+
+let slice = fibs[1..<fibs.endIndex]
+type(of: fibs)
+type(of: slice)
 
 
+
+// 字典
+enum Setting{
+    case text(String)
+    case int(Int)
+    case bool(Bool)
+}
+
+let defaultSettings: [String: Setting] = [
+    "Airplane Mode" : .bool(true),
+    "Name": .text("My iPhone"),
+]
+
+defaultSettings["Name"]
+
+
+var localizedSettings = defaultSettings
+localizedSettings["Name"] = .text("Mein iPhone")
+localizedSettings["Do Not Disturb"] = .bool(true)
+localizedSettings
+
+let oldName = localizedSettings.updateValue(.text("Hello iPhone"), forKey: "Name")
+localizedSettings["Name"]
+oldName
+
+// 有用的字典扩展
+extension Dictionary{
+    mutating func merge<S>(_ other: S) where S:Sequence, S.Iterator.Element == (key:Key, value:Value) {
+        for (k, v) in other{
+            self[k] = v
+        }
+    }
+}
+
+var settings = defaultSettings
+let overriddenSettings: [String: Setting] = ["Name":.text("Jane iPhone")]
+settings.merge(overriddenSettings)
+settings
+
+extension Dictionary{
+    init<S: Sequence>(_ sequence: S)
+        where S.Iterator.Element == (key:Key, value:Value) {
+            self = [:]
+            self.merge(sequence)
+        }
+}
+
+let defaultAlarms = (1..<5).map {
+    (key:"Alarm \($0)", value: false)
+}
+
+extension Dictionary{
+    func mapValues<NewValue>(transform:(Value) -> NewValue) -> [Key:NewValue] {
+        return Dictionary<Key, NewValue>(map{ (key, value) in
+            return (key, transform(value))
+        })
+    }
+}
+
+let settingsAsStrings = settings.mapValues { setting -> String in
+    
+    switch setting {
+    case .text(let text): return text
+    case .int(let number): return String(number)
+    case .bool(let value): return String(value)
+    }
+}
+
+settingsAsStrings
+
+struct Person {
+    var name: String
+    var zipCode: Int
+    var birthday: Data
+}
+
+extension Person: Equatable {
+    static func == (lhs: Person, rhs: Person) -> Bool{
+        return lhs.name == rhs.name &&
+                lhs.zipCode == rhs.zipCode &&
+                lhs.birthday == rhs.birthday
+    }
+}
+
+extension Person: Hashable {
+    var hashValue: Int {
+        return name.hashValue ^ zipCode.hashValue ^ birthday.hashValue
+    }
+}
+
+
+let person1 = Person.init(name: "S", zipCode: 3, birthday: Data.init())
+let person2 = Person.init(name: "S", zipCode: 3, birthday: Data.init())
+person1.hashValue
+person2.hashValue
+person1 == person2
+
+// Set
+
+// Set是标准库中唯一实现了SetAlgebra的类型
+
+let naturals: Set = [1, 2, 3, 2]
+
+naturals.count
+naturals.contains(2)
+naturals.contains(4)
+
+// 集合代数
+
+
+let iPods: Set = ["iPod1","iPod2","iPod3","iPod4","iPod5"]
+let discontinuedIPods: Set = ["iPod2","iPod3"]
+// 一个集合中求另一个集合的补集
+let currentIPods: Set = iPods.subtracting(discontinuedIPods)
+
+let touchscreen: Set = ["iPhone","iPod1","iPod2","iPad"]
+// 两个集合的交集
+let iPodsWithTouch = iPods.intersection(touchscreen)
+
+var discontinued: Set = ["iBook", "Powerbook", "Power Mac"]
+// 两个集合的并集
+discontinued.formUnion(discontinuedIPods)
+
+// 索引集合和字符集合
+
+var indices = IndexSet()
+indices.insert(integersIn: 1..<5)
+indices.insert(integersIn: 11..<15)
+indices
+let evenIndices = indices.filter {
+    $0 % 2 == 0
+}
+
+evenIndices
+
+// 在闭包中使用集合
+extension Sequence where Iterator.Element: Hashable {
+    func unique() -> [Iterator.Element] {
+        var seen: Set<Iterator.Element> = []
+        return filter{
+            if seen.contains($0) {
+                return false
+            }else {
+                seen.insert($0)
+                return true
+            }
+        }
+    }
+}
+
+[1,2,3,4,5,4,23,6,4,2,9].unique()
+
+// 2.4 Range
+
+let singleDigitNumbers = 0..<10
+let lowercaseLetters = Character("a")...Character("z")
+
+
+// 错误：ClosedRange<Character>类型不遵守Sequence协议
+//for char in lowercaseLetters {
+//
+//}
+
+singleDigitNumbers.map {
+    $0 * $0
+}
 
 
 
